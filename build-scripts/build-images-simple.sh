@@ -12,6 +12,7 @@ function build_basic_images() {
 
 function build_jar() {
   # Get count of args
+  # shellcheck disable=SC2068
 for var in $@
   do
     DIR=$var
@@ -25,6 +26,7 @@ for var in $@
 
 function build_lib() {
   # Get count of args
+  # shellcheck disable=SC2068
 for var in $@
   do
     DIR=$var
